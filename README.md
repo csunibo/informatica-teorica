@@ -1,4 +1,4 @@
-# Informatica Teorica
+# Informatica Teorica 
 
 Una raccolta di risorse per l'insegnamento di Informatica Teorica del Corso di
 Laurea in Informatica.
