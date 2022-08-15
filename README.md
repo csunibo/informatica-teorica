@@ -1,14 +1,14 @@
-# Informatica Teorica 
+# Informatica teorica (11933)
 
-Una raccolta di risorse per l'insegnamento di Informatica Teorica del Corso di
-Laurea in Informatica.
+Una raccolta di risorse per l'insegnamento di Informatica teorica (11933) del
+Corso di Laurea in Informatica.
 
 ## Presentazione
 
 [Questo sito](https://csunibo.github.io/informatica-teorica) elenca staticamente
-i contenuti della raccolta. Qui, documenti e presentazioni con estensione
-`.md`, `.tex`, `.doc`, `.docx`, `.ppt` o `.pptx` sono automaticamente
-convertiti in formato PDF.
+i contenuti della raccolta. Qui, documenti e presentazioni con estensione `.md`,
+`.tex`, `.doc`, `.docx`, `.ppt` o `.pptx` sono automaticamente convertiti in
+formato PDF.
 
 ## Contribuire
 
