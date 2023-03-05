@@ -23,10 +23,8 @@ infinita.
 ### 5.b
 
 Sia $M = (\Sigma, Q, q_0, H, \delta)$ una macchina di classe C. Considero l'NFA
-$N = (\Sigma, Q \prod \Sigma, (q_0, \textvisiblespace), H \prod \Sigma, \delta')$,
+$N = (\Sigma, Q \times \Sigma, (q_0, \textvisiblespace), H \times \Sigma, \delta')$,
 where:
-
-$$q_{-1} \notin Q$$
 
 $$\forall x \in \Sigma \quad \delta'((q_0, \textvisiblespace), x) = (q_0, x)$$
 
