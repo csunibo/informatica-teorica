@@ -65,14 +65,14 @@ $$\delta(q_0, \textvisiblespace) = (q_0, \textvisiblespace, \rightarrow)$$
 
 - si consideri la funzione che mappa le $(y, x)$ la cui $y$ non è codifica di
   nessuna macchina in $y$, e le $(y, x)$ la cui $y$ codifica una qualche
-  macchina $M_y$ nella codifica della corrispettiva macchina $M_y^'$. Tale
+  macchina $M_y$ nella codifica della corrispettiva macchina $M_{M_y}$. Tale
   macchina prima cancella il proprio nastro, poi vi scrive $x$ e infine simula
   su tale sequenza $M_y$. Questa funzione è banalmente computabile da una
   macchina di Turing, e inoltre è evidente che rispetti $(y, x) \in HALT
   \leftrightarrow f((y, x)) \in L$. Se infatti $y$ non è codifica di alcuna
   macchina, entrambi i membri dell'equivalenza logica sono falsi, mentre se $y$
   codifica una qualche macchina $M_y$ allora è ovvio per costruzione che $M_y$
-  converga su $x$ se e solo se $M_y^'$ converge sulla propria codifica;
+  converga su $x$ se e solo se $M_{M_y}$ converge sulla propria codifica;
 - ne concludiamo che $L$ non sia decidibile;
 - siccome deve valere che $HALT^-$ sia mapping-riducibile a $L^-$, allora anche
   $L^-$, come $HALT^-$ deve essere non riconoscibile.
@@ -96,7 +96,7 @@ esattamente una volta.
 Avrò bisogno di memorizzare un intero per il numero dei nodi ($|X|$), $|X|^2$
 interi di lunghezza al più $m$ per i pesi e un ultimo intero per $k$. Siccome
 uso codifica binaria, il costo complessivo è
-$\Omicron(|X|^2 log(m) + log(k))$.
+$O(|X|^2 log(m) + log(k))$.
 
 ### 2.d
 
