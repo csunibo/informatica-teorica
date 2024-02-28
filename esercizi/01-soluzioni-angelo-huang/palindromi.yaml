@@ -1,0 +1,32 @@
+# esercizio riconoscitore palindromi
+input: 'aabaa'
+blank: ' '
+start state: read
+table:
+  read:
+    'a': {write: ' ', R: check_single_a}
+    'b': {write: ' ', R: check_single_b}
+    ' ': {R: yes}
+  check_single_a:
+    ['a', 'b']: {R: move_a}
+    ' ': {R: yes}
+  check_single_b:
+    ['a', 'b']: {R: move_b}
+  move_a: # scrive l'uno che ha copiato
+    ['a', 'b']: R
+    ' ': {L: delete_a}
+  delete_a:
+    'a': {write: ' ', L: back}
+    'b': {L: no}
+  move_b: # scrive l'uno che ha copiato
+    ['a', 'b']: R
+    ' ': {L: delete_b}
+  delete_b:
+    'a': {L: no}
+    'b': {write: ' ', L: back}
+  back:
+    ['a', 'b']: L
+    ' ': {R: read}
+  yes:
+  no:
+

@@ -1,0 +1,9 @@
+# Esegue all'infinito 0 e 1
+input: ''
+blank: ' '
+start state: zero
+table:
+  uno:
+    [1, 0, ' ']: {write: 1, R: zero}
+  zero:
+    [1, 0, ' ']: {write: 0, R: uno}

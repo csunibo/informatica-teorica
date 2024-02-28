@@ -1,0 +1,31 @@
+input: '1+11'
+blank: ' '
+start state: inizio
+table:
+  inizio:
+    [1, 0]: R
+    '+': {R: togli_destra_no_1}
+  togli_destra_no_1: # vede se deve togliere qualcosa, se ha finito di togliere, finisce (al massimo aggiungi qualcosa per togliere la +)
+    0: R
+    ' ': {L: halt}
+    1: {R: togli_destra}
+  togli_destra:
+    [1, 0]: R
+    ' ': {L: togli_togli}
+  togli_togli:
+    1: {write: 0, L: togli_halt}
+    [0, ' ']: {write: 1, L}
+  togli_halt:
+    [1, 0]: L
+    '+': {L: somma_aggiunge}
+    # ' ': {R: somma_destra}
+  # va al carattere piu' a destra
+  somma_destra:
+    [1,0]: R
+    '+'  : {L: somma_aggiunge}
+  # poi aggiunge 1
+  somma_aggiunge:
+    1      : {write: 0, L}
+    0: {write: 1, R: inizio}
+    ' ': {write: 1, R: inizio}
+  halt:

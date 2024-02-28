@@ -1,0 +1,21 @@
+# esercizio copia 01
+input: '1111100000000'
+blank: ' '
+start state: copia
+table:
+  copia:
+    [1]: {write: 2, R: muovi}
+    0: {L: riscrivi_1}
+  muovi:
+    1: R
+    0: {R: scrivi}
+  scrivi: # scrive l'uno che ha copiato
+    1: R
+    0: {write: 1, L: indietro}
+    ' ': {L: halt} # errore, non ha zeri su cui sovrascrivere
+  indietro: # torna indietro
+    [0, 1]: L
+    2: {R: copia}
+  riscrivi_1:
+    2: {write: 1, L: riscrivi_1}
+  halt:

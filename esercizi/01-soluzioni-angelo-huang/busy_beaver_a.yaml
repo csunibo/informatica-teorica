@@ -1,0 +1,12 @@
+# https://en.wikipedia.org/wiki/Busy_beaver#Examples
+input: ''
+blank: 0
+start state: a
+table:
+  a:
+    0: {write: 1, R: b}
+    1: {write: 1, L: b}
+  b:
+    0: {write: 1, L: a}
+    1: {write: 1, R: halt}
+  halt:
