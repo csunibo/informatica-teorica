@@ -47,7 +47,7 @@ La differenza è che in questo caso l'alfabeto dell'input è uguale all'alfabeto
 Questa sintassi è più comprensibile della precedente quindi nice.
 
 Come per tutti i precedenti  automi, anche questi hanno una rappresentazione possibile a diagramma:
-<img src="./static/images/La macchina di Turing-20240221114813908.webp" width="544" alt="La macchina di Turing-20240221114813908">
+![La macchina di Turing-20240221114813908](./static/images/la-macchina-di-turing-20240221114813908.webp)
 
 A lezione abbiamo anche visto esempi di macchine che computano moltiplicazione binaria o addizione binaria.
 
@@ -83,7 +83,7 @@ Significa che non può dire in tempo finito né sì né no. Quindi è una cosa a
 
 #### Gerarchia di Chomsky🟨+
 Vedere [Linguaggi liberi e PDA#Classificazione dei linguaggi](./linguaggi-liberi-e-pda#classificazione-dei-linguaggi) alla sezione schema generale delle grammatiche. La cosa da ricordare è che TM è il modello più generale fra tutti i precedenti modelli di macchine di Turing e automi.
-<img src="./static/images/La macchina di Turing-20240512120403415.webp" alt="La macchina di Turing-20240512120403415">
+![La macchina di Turing-20240512120403415](./static/images/la-macchina-di-turing-20240512120403415.webp)
 ### Tesi di Church-Turing
 #### Enunciato della tesi🟩
 > Se la soluzione di un dato problema può essere calcolata attraverso una procedura algoritmica, allora può essere calcolata da una macchina di Turing. (*Alonzo Church*)
@@ -153,7 +153,7 @@ Anche questo è stato pensato in [(Turing 1937)](http://doi.wiley.com/10.1112/pl
 Una cosa interessante è che prima di esso, la macchina era pensata per una unica cosa, dopo Turing si può usare la stessa macchina per tutti gli algoritmi possibili. Ha introdotto la nozione di programmabilità!
 Utilizzare il dato (l'algoritmo) come input di sé stesso è stato usato da Gödel nella sua dimostrazione famosa. Ha codificato teoremi come numeri, permettendo l'uso dell'aritmetica stessa.
 #### Descrizione UTM🟩
-<img src="./static/images/La macchina di Turing-20240229124153090.webp" alt="La macchina di Turing-20240229124153090">
+![La macchina di Turing-20240229124153090](./static/images/la-macchina-di-turing-20240229124153090.webp)
 La cosa importante è che:
 > La macchina universale deve avere lo stesso comportamento di $\mathcal{M}$.
 

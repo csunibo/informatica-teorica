@@ -16,7 +16,7 @@ Questo è presente in modo abbastanza facile sul Sipser.
 
 > La computazione comincia con l’input sul primo nastro, e tutti gli altri nastri vuoti. Macchine di Turing con nastri addizionali In ciascun passo di computazione, ogni testina é nello stesso stato, ma può essere in una posizione diversa, leggere un simbolo differente, e compiere un’azione diversa. Se si raggiunge uno stato finale, l’output é letto dal primo nastro.
 
-<img src="./static/images/Estensioni di Turing e altre macchine-20240222123223011.webp" alt="Estensioni di Turing e altre macchine-20240222123223011">
+![Estensioni di Turing e altre macchine-20240222123223011](./static/images/estensioni-di-turing-e-altre-macchine-20240222123223011.webp)
 #### Definizione formalismo 🟩
 L'unica differenza formale è che questa macchina è **parallela** cioè ho molte macchine di turing che vanno allo stesso momento
 $$
@@ -42,7 +42,7 @@ $$
 \Sigma' =  \Sigma \cup \left\{ \# \right\}  \cup \left\{ \bar{a} : a \in \Sigma \right\} 
 $$
 Allora
-<img src="./static/images/Estensioni di Turing e altre macchine-20240222124050098.webp" alt="Estensioni di Turing e altre macchine-20240222124050098">
+![Estensioni di Turing e altre macchine-20240222124050098](./static/images/estensioni-di-turing-e-altre-macchine-20240222124050098.webp)
 I molteplici passi di computazione su molti nastri che sono un singolo passo per la multinastro possono essere simulati sul singolo nastro.
 La lettere barretta ci permette di mantenere il pointer sul nastro originale. Se c'è bisogno di spazio in più su un nastro, debbo postare tutto a destra (tanto è infinito e posso farlo). (nota che per questo teorema è necessario l'infinito!!)
 Alla fine cancello tutto dopo il primo cancelletto e ritorno quello.
@@ -74,7 +74,7 @@ Sulle slides c'è un esempio di NMT molto semplice per dimostrare che la primali
 Supponendo che abbiamo l'albero di computazione, posso esplorare con [Grafi#BFS](./grafi#bfs) tutto l'albero di computazione e avere alla fine lo stesso risultato.
 
 Qui c'è un albero di computazione. (poi probabilmente bisognerà codificare un backtracking)
-<img src="./static/images/Estensioni di Turing e altre macchine-20240222125426485.webp" alt="Estensioni di Turing e altre macchine-20240222125426485">
+![Estensioni di Turing e altre macchine-20240222125426485](./static/images/estensioni-di-turing-e altre-macchine-20240222125426485.webp)
 
 ### Altre
 Una altra macchina di Turing di interesse che non trattiamo qui è il prefix turing machine, che trattiamo in Kolmogorov complexity.
@@ -122,7 +122,7 @@ Scegliamo $\Sigma = \left\{ 0, 1, U \right\}$ dove $U$ sta per empty, nel caso i
 Allora possiamo usare la notazione in base $3$ per decodificare il numero, assumendo $code(0) = 0$, $code(1) = 1$, $code(U) = 2$.
 
 Poi introduciamo registri per codificare $\delta$ la funzione di transizione.
-<img src="./static/images/Estensioni di Turing e altre macchine-20240222133448285.webp" alt="Estensioni di Turing e altre macchine-20240222133448285">
+![Estensioni di Turing e altre macchine-20240222133448285](./static/images/estensioni-di-turing-e-altre-macchine-20240222133448285.webp)
 
 ### Modello WHILE
 Questo è un formalismo più simile a uno di alto livello (quindi programma normale).Descritto in 
@@ -136,7 +136,7 @@ Abbiamo:
 3. seguenziamento
 
 Possiamo definirlo in [Sintassi e RI strutturali#4.2 Backus-Naur Form](./sintassi-e-ri-strutturali#4.2-backus-naur-form)
-<img src="./static/images/Estensioni di Turing e altre macchine-20240222133654619.webp" width="464" alt="Estensioni di Turing e altre macchine-20240222133654619">
+![Estensioni di Turing e altre macchine-20240222133654619](./static/images/estensioni-di-Turing-e-altre macchine-20240222133654619.webp)
 
 Ci sono tre forme di assegnazione, uno zero, uno successivo, uno uguale credo.
 Non viene fatta la parte della semantica che abbiamo fatto tempo fa a linguaggi.
@@ -151,9 +151,9 @@ Su questo posso codificare i casi base accennati di sopra.
 
 Poi caso induttivo è while e sequenza di istruzioni.
 Poi per codificare la sequenza, basta concatenare molte macchine di turing normali, ognuna che codifica l'istruzione. Sappiamo che queste esistono per ipotesi induttiva.
-<img src="./static/images/Estensioni di Turing e altre macchine-20240228131640133.webp" alt="Estensioni di Turing e altre macchine-20240228131640133">
+![Estensioni di Turing e altre macchine-20240228131640133](./static/images/estensioni-di-Turing-e-altre macchine-20240228131640133.webp)
 Per il while possiamo usare due macchine, una per il test, una per il corpo del while e dire che accetta quando esco dal ciclo.
-<img src="./static/images/Estensioni di Turing e altre macchine-20240228131659027.webp" alt="Estensioni di Turing e altre macchine-20240228131659027">
+![Estensioni di Turing e altre macchine-20240228131659027](./static/images/estensioni-di-Turing-e-altre macchine-20240228131659027.webp)
 È interessante osservare come siano uguali questi.
 
 

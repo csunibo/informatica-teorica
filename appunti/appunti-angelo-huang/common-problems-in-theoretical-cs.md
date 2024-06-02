@@ -62,7 +62,7 @@ Then we link every node in this way:
 
 Example:
 
-<img src="./static/images/Common problems in Theoretical CS-20240410121141341.webp" alt="Common problems in Theoretical CS-20240410121141341">
+![Common problems in Theoretical CS-20240410121141341](./static/images/Common problems in Theoretical CS-20240410121141341.webp)
 
 We can prove that this conversion is polynomial (clear, you can write the algo and prove it 💠).
 
@@ -145,24 +145,24 @@ E in questo modo riduco il problema a un Halt. Perché sapere tassellare signifi
 #### Codifica delle regole dei tiling
 Posso codificare sia i tile disponibili, sia le regole di adiacenza in questo modo.
 
-<img src="./static/images/Tiling problem-20240307134015081.webp" alt="Tiling problem-20240307134015081">
+![Tiling problem-20240307134015081](./static/images/tiling-problem-20240307134015081.webp)
 
 Poi vogliamo codificare ogni casella verticale **un singolo step di computazione**.
 
 #### Cella di identità
 Questa cella non fa niente.
-<img src="./static/images/Tiling problem-20240307134139688.webp" alt="Tiling problem-20240307134139688">
+![Tiling problem-20240307134139688](./static/images/tiling-problem-20240307134139688.webp)
 
 #### Celle di transizione
 Possiamo codificare le funzioni di transizione della macchina di Turing.
 Poi ho ancora le cose che mantengono il simbolo nella cella di arrivo.
 
-<img src="./static/images/Tiling problem-20240307134228290.webp" alt="Tiling problem-20240307134228290">
+![Tiling problem-20240307134228290](./static/images/tiling-problem-20240307134228290.webp)"
 
 #### Conclusione
 sse non si ferma la macchina, allora esiste un tiling (che è una cosa banale perché significa che continua all'infinito, e quindi posso mappare tutto).
 
-<img src="./static/images/Tiling problem-20240307134959316.webp" alt="Tiling problem-20240307134959316">
+![Tiling problem-20240307134959316](./static/images/tiling-problem-20240307134959316.webp)
 
 
 

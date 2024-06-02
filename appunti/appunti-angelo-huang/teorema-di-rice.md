@@ -44,7 +44,7 @@ We proved this by [Mapping reducibility](./halting-theorem-and-reducibility) wit
 Without loss of generality, we assume that given a $P$ we have that $P(\mathcal{M}_{\varnothing}) = 0$. Then, given the fact that the property is not trivial we have that exists a $\mathcal{M}$ such that $P(\mathcal{M}) = 1$. 
 Let's procede by contradiction. Assume that $P$ is decidable.
 Let's proof that $HALT \leq P$ where $P$ is the language that knows the same stuff.
-<img src="./static/images/Teorema di Rice-20240313115713766.webp" alt="Teorema di Rice-20240313115713766">
+![Teorema di Rice-20240313115713766](./static/images/Teorema di Rice-20240313115713766.webp)
 This proves Rice Theorem by [mapping reducibility](./halting-theorem-and-reducibility#mapping-reducibility) properties.
 
 

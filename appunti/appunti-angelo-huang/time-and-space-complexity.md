@@ -67,7 +67,7 @@ is in $P$ class. (Just use [Grafi#BFS](./grafi#bfs) or [Grafi#DFS](./grafi#dfs))
 NOTE: we have worked assuming that the algorithm worked on the nodes, but usually TM work with bits, the thing is that there is a polynomial algo that converts that nodes into binary format, so it is not much of a big deal.
 
 #### Overview of problems in $P$ 
-<img src="./static/images/Time Complexity-20240321132710013.webp" alt="Time Complexity-20240321132710013">
+![Time Complexity-20240321132710013](./static/images/time-complexity-20240321132710013.webp)
 
 ### Exponential Complexity Class🟩
 The exponential class $EXP$ is defined as:
@@ -80,7 +80,7 @@ This class is common of the algorithms that use backtracking, for example CSP pr
 Let $N$ be a non-deterministic decider (which means that the TM will halt on every computation branch) then we have that a problem is in this complexity class, called $NTIME$ if the running time cost $f: \mathbb{N} \to \mathbb{N}$ is bounded by that (longest computational branch).
 The difference with [#Polynomial Complexity Class](#polynomial-complexity-class) is that here we consider the length of a single branch, but we explore everything at the same time!
 
-<img src="./static/images/Time Complexity-20240314134202678.webp" alt="Time Complexity-20240314134202678">
+![Time Complexity-20240314134202678](./static/images/time-complexity-20240314134202678.webp)
 
 Quindi
 
@@ -162,7 +162,7 @@ $$
 P \subseteq NP \subseteq PSPACE = NPSPACE \subseteq  EXPTIME
 $$
 The last subset is given by an observation that a TM that uses $f(n)$ space (PSPACE) cannot have more than $f(n)2^{O(f(n))}$ computational steps before looping.
-<img src="./static/images/Time and Space Complexity-20240518095235181.webp" alt="Time and Space Complexity-20240518095235181">
+![Time Complexity-20240518095235181](./static/images/time-complexity-20240518095235181.webp)
 
 ### Def: PSPACE and NPSPACE
 
