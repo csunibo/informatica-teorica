@@ -72,7 +72,7 @@ We can say that SAT is easily verifiable.
 This is the difficult part.
 The idea is to create a representation of the computation of the Turing Machine of whatever algorithm. So we create a **tableau** that represents the computation, and we want to translate this tableau as a satisfiability problem. We know that this tableau is finite because the problem is in $NP$.
 
-![Cook-Levin Theorem-20240410125141970](./static/images/cook-levin-theorem-20240410125141970.webp)
+![Cook-Levin Theorem-20240410125141970](./static/images/cook-levin-theorem-20240410125141970.png)
 
 We say that a formula is
 $$
@@ -109,7 +109,7 @@ Then we need to define the $F_{move}$ function, which is the last formula we wou
 As we only need to know how the state moves, we just need **windows** of 3.
 
 Examples:
-![Cook-Levin Theorem-20240410131145903](./static/images/cook-levin-theorem-20240410131145903.webp)
+![Cook-Levin Theorem-20240410131145903](./static/images/cook-levin-theorem-20240410131145903.png)
 
 So for example:
 $$
