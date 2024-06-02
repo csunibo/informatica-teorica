@@ -67,6 +67,7 @@ is in $P$ class. (Just use [Grafi#BFS](./grafi#bfs) or [Grafi#DFS](./grafi#dfs))
 NOTE: we have worked assuming that the algorithm worked on the nodes, but usually TM work with bits, the thing is that there is a polynomial algo that converts that nodes into binary format, so it is not much of a big deal.
 
 #### Overview of problems in $P$ 
+
 ![Time Complexity-20240321132710013](./static/images/time-complexity-20240321132710013.png)
 
 ### Exponential Complexity Class🟩
@@ -162,6 +163,7 @@ $$
 P \subseteq NP \subseteq PSPACE = NPSPACE \subseteq  EXPTIME
 $$
 The last subset is given by an observation that a TM that uses $f(n)$ space (PSPACE) cannot have more than $f(n)2^{O(f(n))}$ computational steps before looping.
+
 ![Time Complexity-20240518095235181](./static/images/time-complexity-20240518095235181.png)
 
 ### Def: PSPACE and NPSPACE

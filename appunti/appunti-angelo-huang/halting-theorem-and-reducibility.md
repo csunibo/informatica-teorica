@@ -92,6 +92,7 @@ $$
 Per dimostrare ciò basta dimostrare che $HALT \leq ETH$
 Ossia dobbiamo costruire una funzione che mappa ogni stringa di $HALT$ in una di $ETH$.
 Questo è molto semplice, solo definire qualche dettaglio (non banale) 
+
 ![Halting Theorem and Reducibility-20240306125418004](./static/images/halting-theorem-and-reducibility-20240306125418004.png)
 
 #### Indicibilità ogni input🟩
@@ -121,7 +122,9 @@ EQ = \left\{ \langle y, x \rangle \in \Sigma^{*} \times \Sigma^{*} : x = code(\m
 $$
 Anche in questo caso proviamo a ridurci al caso $FL$.
 Sempre come prima, per input $\langle \mathcal{M}\rangle$ mi costruisco questa macchina
+
 ![Halting Theorem and Reducibility-20240306132502507](./static/images/halting-theorem-and-reducibility-20240306132502507.png)
+
 La correttezza di questo è un po' più fine, però è giusto. Vedere [qui](https://chatgpt.com/share/15c48b10-4c2c-45ea-ae4d-a665b361739b).
 
 #### Equivalence problem recognizability🟨+
@@ -134,7 +137,9 @@ Dimostro la riduzione $HALT \implies EQ^{-}$
 Cosa curiosa è che $HALT$ è il suo opposto non sono comparabili. Mentre ci aspetteremmo che HALT sia più semplice.
 Una altra cosa curiosa è che EQ non è riconoscibile, e nemmeno il suo opposto lo è.
 Quindi EQ non è nemmeno semi-decidibile.
+
 ![Halting Theorem and Reducibility-20240517122359749](./static/images/halting-theorem-and-reducibility-20240517122359749.png)
+
 ### Turing riducibilità
 
 #### Definizione di oracolo🟩

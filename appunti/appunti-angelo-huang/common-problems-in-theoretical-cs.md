@@ -62,7 +62,7 @@ Then we link every node in this way:
 
 Example:
 
-![Common problems in Theoretical CS-20240410121141341](./static/images/Common problems in Theoretical CS-20240410121141341.png)
+![Common problems in Theoretical CS-20240410121141341](./static/images/common-problems-in-theoretical-cs-20240410121141341.png)
 
 We can prove that this conversion is polynomial (clear, you can write the algo and prove it 💠).
 
@@ -151,6 +151,7 @@ Poi vogliamo codificare ogni casella verticale **un singolo step di computazione
 
 #### Cella di identità
 Questa cella non fa niente.
+
 ![Tiling problem-20240307134139688](./static/images/tiling-problem-20240307134139688.png)
 
 #### Celle di transizione

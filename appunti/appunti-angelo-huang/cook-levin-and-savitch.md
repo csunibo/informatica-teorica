@@ -109,6 +109,7 @@ Then we need to define the $F_{move}$ function, which is the last formula we wou
 As we only need to know how the state moves, we just need **windows** of 3.
 
 Examples:
+
 ![Cook-Levin Theorem-20240410131145903](./static/images/cook-levin-theorem-20240410131145903.png)
 
 So for example:
