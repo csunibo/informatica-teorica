@@ -56,7 +56,7 @@ Ricorda che $P \subseteq NP \subseteq PSPACE$
 # Problemi Aperti, Vero o Falso
 | Problema | STATO | Note |
 | - | - | - |
-| $L \in NP \implies L^- \in NP$                        | Vero | Poichè basta invertire stati finali accettanti e stati finali rigettanti, e $P \subseteq NP$
+| $L \in NP \implies L^- \in NP$                        | APERTO | Poichè non basta invertire stati finali accettanti e stati finali rigettanti, visto che il determinismo potrebbe non far decidere più in tempo polinomiale il linguaggio
 | Sia $L \in P$. Se $SAT \leq_p L$, allora $P = NP$     | Vero |
 | Sia $L \in P$. Se $3SAT \leq_p L$, allora $P = NP$    | Vero |
 | Alcuni linguaggi decidibili non sono in $P$           | Vero | Vedi linguaggi in $EXP$
